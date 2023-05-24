@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+
+
+
+
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 122px auto 0;
+
+    max-width: 82rem;
+    max-height: 33.6rem;
+}
+
+.time {
+    display: flex;
+
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 12.6rem;
+    font-weight: 500;
+    line-height: 14.8rem;
+    text-align: center;
+
+
+}
+
+button {
+    border: none;
+}
+
+.controls button {
+  
+  background: none;
+  
+}
+
+.controls button:hover path{
+  fill: aquamarine;
+}
+
+.controls button:active path{
+  fill: aqua;
+
+}
+
+
+/* controls dark mode */
+
+
+.controlsButtons {
+  fill: black;
+}
+
+.dark {
+  
+  fill: #4fabc7;
+}
+
+.timer.dark{
+  color: white;
+}
+
+
+.fullBody.dark {
+  background: black;
+}
+
+.musics button.dark {
+
+  background: #8b92e4;
+}
+
+.musics path.dark {
+
+  fill: white;
+
+}
+
+
+
+
+
+
+
+.musics {
+    max-width: 30.8rem;
+    max-height: 33.6rem;
+
+}
+.musics button {
+    /*
+    */
+    padding: 48px;
+    height: 152px;
+    width: 138px; 
+
+    border-radius: 24px;
+}
+
+.musics button:hover {
+  background: #1f8eb0;
+}
+
+
+.musics button:active{
+  background: #4fabc7;
+}
+
+
+
+
+.buttonFlorest {
+margin-right: 29px;
+margin-bottom: 29px;
+   
+}
+
+
+.controls {
+    display: flex;
+    gap: 4rem;
+    
+    margin-top: 1.7rem;
+    
+}
+
+.buttonCoffeeShop{
+    margin-right: 29px;
+    padding: 48px 41px 48px 41px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.buttonRainn {
+    background: #02799D;
+}
+
+.musics path.dark {
+  fill: white ;
+}
+
+.musics button:hover path{
+  fill:white
+}
+
+.musics button.musicOn{
+  background: #4fabc7;
+}
+
+
+
+
+/* Dark Mode Button On (Moon) / Off (Sun) */
+
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #73C0FC;
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    left: 2px;
+    bottom: 2px;
+    z-index: 2;
+    background-color: #e8e8e8;
+    transition: .4s;
+  }
+  
+  .sun svg {
+    position: absolute;
+    top: 6px;
+    left: 36px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .moon svg {
+    fill: #73C0FC;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* .switch:hover */.sun svg {
+    animation: rotate 15s linear infinite;
+  }
+  
+  @keyframes rotate {
+   
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* .switch:hover */.moon svg {
+    animation: tilt 5s linear infinite;
+  }
+  
+  @keyframes tilt {
+   
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      transform: rotate(-10deg);
+    }
+  
+    75% {
+      transform: rotate(10deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .input:checked + .slider {
+    background-color: #183153;
+  }
+  
+  .input:focus + .slider {
+    box-shadow: 0 0 1px #183153;
+  }
+  
+  .input:checked + .slider:before {
+    transform: translateX(30px);
+  }
+
+  .test {
+    margin-right: 40px;
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+}
